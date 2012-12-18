@@ -10,8 +10,11 @@ class LCDMenuItem{
 	public:
 		LCDMenuItem(String);
 		void setPrev(LCDMenuItem *);
-		void setNext(LCDMenuItem *);  
+		void setNext(LCDMenuItem *);
+		LCDMenuItem* getNext();
+		LCDMenuItem* getPrev();
 		void setName(String);
+		String getName();
 		void (*action)();
 };
 

@@ -7,13 +7,16 @@ class LCDMenu{
   int Index;
   protected:
     String Name;
-	LCDMenuItem *menuFirst;
-	LCDMenuItem *menuLast;
-	LCDMenuItem *menuCurrent;
+	LCDMenuItem* menuFirst;
+	LCDMenuItem* menuLast;
     void setName (String);
-	void addMenuItem (LCDMenuItem *);
+
   public: 
     LCDMenu(String);
+	LCDMenuItem* next();
+	LCDMenuItem* prev();
+	void addMenuItem (LCDMenuItem *);
+	LCDMenuItem* menuCurrent;
 }; 
 
 #endif
