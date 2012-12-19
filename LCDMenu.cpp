@@ -1,10 +1,11 @@
 #include <LiquidCrystal.h>
 #include "LCDMenu.h"
 
-LCDMenu::LCDMenu(String newName)
+LCDMenu::LCDMenu(String newName, LiquidCrystal* newLCD)
 {
   Index = 0;
   setName(newName);
+  setLCD(newLCD);
   menuFirst = NULL;
   menuLast = NULL;
 }
@@ -43,4 +44,14 @@ void LCDMenu::addMenuItem(LCDMenuItem* item)
 			menuLast=item;
 		}
 	}
+}
+
+void LCDMenu::setLCD(LiquidCrystal* newLCD)
+{
+	LCD=newLCD;
+}
+
+LiquidCrystal* LCDMenu::getLCD()
+{
+	return LCD;
 }

@@ -1,4 +1,5 @@
 #include "LCDMenuItem.h"
+#include <stdio.h>
 
 LCDMenuItem::LCDMenuItem(String newName)
 {
@@ -7,7 +8,11 @@ LCDMenuItem::LCDMenuItem(String newName)
 
 void LCDMenuItem::setName(String newName)
 {
-	Name = newName;
+	char buffer[16];
+	newName.toCharArray(buffer,16);
+	snprintf(buffer, 15, "%s               ", buffer);
+	Name=String(buffer);
+	//Name=newName;
 }
 
 String LCDMenuItem::getName()

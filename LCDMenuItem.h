@@ -4,8 +4,8 @@
 
 class LCDMenuItem{
 	protected:
-		LCDMenuItem *Prev;
-		LCDMenuItem *Next;
+		LCDMenuItem* Prev;
+		LCDMenuItem* Next;
 		String Name;
 	public:
 		LCDMenuItem(String);
