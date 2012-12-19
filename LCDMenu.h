@@ -4,7 +4,6 @@
 #include "LCDMenuItem.h"
 
 class LCDMenu{
-  int Index;
   protected:
     String Name;
 	LCDMenuItem* menuFirst;

@@ -3,7 +3,6 @@
 
 LCDMenu::LCDMenu(String newName, LiquidCrystal* newLCD)
 {
-  Index = 0;
   setName(newName);
   setLCD(newLCD);
   menuFirst = NULL;

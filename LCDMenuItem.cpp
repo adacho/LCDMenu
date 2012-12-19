@@ -10,7 +10,7 @@ void LCDMenuItem::setName(String newName)
 {
 	char buffer[16];
 	newName.toCharArray(buffer,16);
-	snprintf(buffer, 15, "%s               ", buffer);
+	snprintf(buffer, 15, "%s                ", buffer);
 	Name=String(buffer);
 	//Name=newName;
 }

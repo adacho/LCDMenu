@@ -11,11 +11,13 @@ class LCDMenuItem{
 		LCDMenuItem(String);
 		void setPrev(LCDMenuItem *);
 		void setNext(LCDMenuItem *);
+		void (*action)();
+		void setName(String);
 		LCDMenuItem* getNext();
 		LCDMenuItem* getPrev();
-		void setName(String);
 		String getName();
-		void (*action)();
+		unsigned int Timeout;
+		
 };
 
 #endif
