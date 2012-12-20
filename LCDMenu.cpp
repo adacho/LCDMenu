@@ -40,6 +40,7 @@ void LCDMenu::addMenuItem(LCDMenuItem* item)
 			menuLast->setNext(item);
 			item->setPrev(menuLast);
 			item->setNext(menuFirst);
+			menuFirst->setPrev(item);
 			menuLast=item;
 		}
 	}
