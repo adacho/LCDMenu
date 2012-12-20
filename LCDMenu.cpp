@@ -55,3 +55,8 @@ LiquidCrystal* LCDMenu::getLCD()
 {
 	return LCD;
 }
+
+void LCDMenu::selectOption()
+{
+	menuCurrent->action();
+}
