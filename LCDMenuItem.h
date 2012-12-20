@@ -7,12 +7,14 @@ class LCDMenuItem{
 		LCDMenuItem* Prev;
 		LCDMenuItem* Next;
 		String Name;
+		void (*action)();
 	public:
 		LCDMenuItem(String);
 		void setPrev(LCDMenuItem *);
 		void setNext(LCDMenuItem *);
-		void (*action)();
 		void setName(String);
+		void setAction(void (*newAction)());
+		void executeAction();
 		LCDMenuItem* getNext();
 		LCDMenuItem* getPrev();
 		String getName();

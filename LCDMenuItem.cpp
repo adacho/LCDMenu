@@ -39,3 +39,13 @@ LCDMenuItem* LCDMenuItem::getPrev()
 {
 	return Prev;
 }
+
+void LCDMenuItem::setAction(void (*newAction)())
+{
+	action=newAction;
+}
+
+void LCDMenuItem::executeAction()
+{
+	action();
+}
