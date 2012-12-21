@@ -19,6 +19,7 @@ class LCDMenu{
 	void setLCD(LiquidCrystal*);
 	LiquidCrystal* getLCD();
 	void selectOption();
+	void display();
 }; 
 
 #endif
