@@ -63,10 +63,9 @@ void LCDMenu::selectOption()
 
 void LCDMenu::display()
 {
-	//LCD->clear();
+	LCD->clear();
 	LCD->setCursor(0,0);
-	LCD->print(">");
-	LCD->print(menuCurrent->getName());
+	LCD->print(">" + menuCurrent->getName());
 	if (menuCurrent->getNext() != menuCurrent)
 	{
 		LCD->setCursor(1,1);
