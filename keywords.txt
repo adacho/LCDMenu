@@ -13,21 +13,21 @@ LCDMenuItem	KEYWORD1
 # Methods and Functions (KEYWORD2)
 #######################################
 
-addMenuItem KEYWORD2
-menuCurrent KEYWORD2
-setLCD KEYWORD2
-getLCD KEYWORD2
-selectOption KEYWORD2
-display KEYWORD2
-setPrev KEYWORD2
-setNext KEYWORD2
-setName KEYWORD2
-setAction KEYWORD2
-executeAction KEYWORD2
-getNext KEYWORD2
-getPrev KEYWORD2
-getName KEYWORD2
-Timeout KEYWORD2
+addMenuItem	KEYWORD2
+menuCurrent	KEYWORD2
+setLCD	KEYWORD2
+getLCD	KEYWORD2
+selectOption	KEYWORD2
+display	KEYWORD2
+setPrev	KEYWORD2
+setNext	KEYWORD2
+setName	KEYWORD2
+setAction	KEYWORD2
+executeAction	KEYWORD2
+getNext	KEYWORD2
+getPrev	KEYWORD2
+getName	KEYWORD2
+Timeout	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
